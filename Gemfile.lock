@@ -78,7 +78,7 @@ GEM
       msgpack (~> 1.2)
     builder (3.2.4)
     byebug (11.1.3)
-    capybara (3.37.1)
+    capybara (3.36.0)
       addressable
       matrix
       mini_mime (>= 0.1.3)
@@ -103,6 +103,8 @@ GEM
       railties (>= 3.2)
     erubi (1.10.0)
     execjs (2.7.0)
+    faker (1.9.1)
+      i18n (>= 0.7)
     ffi (1.15.5)
     font-awesome-sass (5.6.1)
       sassc (>= 1.11)
@@ -113,6 +115,8 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    launchy (2.5.0)
+      addressable (~> 2.7)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -198,13 +202,12 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    selenium-webdriver (4.2.1)
+    selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
-      rubyzip (>= 1.2.2, < 3.0)
-      websocket (~> 1.0)
+      rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
-    spring (4.0.0)
+    spring (3.1.1)
     sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -235,7 +238,6 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    websocket (1.2.9)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -253,8 +255,10 @@ DEPENDENCIES
   capybara (>= 3.26)
   devise
   dotenv-rails
+  faker
   font-awesome-sass (~> 5.6.1)
   jbuilder (~> 2.7)
+  launchy
   listen (~> 3.3)
   pg (~> 1.1)
   pry-byebug
@@ -266,7 +270,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   simple_form!
-  spring
+  spring (~> 3.1.1)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
@@ -274,7 +278,7 @@ DEPENDENCIES
   webpacker (~> 5.0)
 
 RUBY VERSION
-   ruby 3.0.3p157
+   ruby 2.6.6p146
 
 BUNDLED WITH
    2.3.5
